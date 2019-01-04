@@ -4,7 +4,9 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server/index.js",
+    "build": "webpack",
+    "react-dev": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -16,14 +18,11 @@
     "url": "https://github.com/Quesarito/related-items-proxy/issues"
   },
   "homepage": "https://github.com/Quesarito/related-items-proxy#readme",
-  "scripts": {
-    "start": "nodemon server/index.js",
-    "build": "webpack",
-    "react-dev": "webpack -d --watch"
-  },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "morgan": "^1.9.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
